@@ -29,7 +29,6 @@ class RedirectController extends Controller
 
     public function returnTarget($token)
     {
-        var_dump($token); exit;
         setcookie('Mediabank_', $token->session, time() + (3600 * 6), "/", '.mediabank.me');
         setcookie('auth', $token->auth, time() + (3600 * 6), "/", '.mediabank.me');
         return redirect()->to($this->getTargetFromAuth($token->auth));
