@@ -15,11 +15,11 @@
     <form action="/" method="post">
         <div class="form-group">
             <label for="session">Mediabank_:</label>
-            <input type="text" class="form-control" placeholder="Enter session cookie" id="session">
+            <input name= "session" type="text" class="form-control" placeholder="Enter session cookie" id="session">
         </div>
         <div class="form-group">
             <label for="auth">Password:</label>
-            <input type="text" class="form-control" placeholder="Auth cookie" id="auth">
+            <input name="auth" type="text" class="form-control" placeholder="Auth cookie" id="auth">
         </div>
         <!--
         <div class="form-group form-check">
