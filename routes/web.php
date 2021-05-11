@@ -11,9 +11,10 @@
 |
 */
 
-// $router->get('/', function () use ($router) {
-//     return $router->app->version();
-// });
+
 
 $router->get('/', 'RedirectController@showForm');
 $router->post('/', 'RedirectController@processForm');
+$router->get('/version', function () use ($router) {
+    return $router->app->version();
+});
