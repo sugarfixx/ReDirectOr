@@ -11,9 +11,9 @@
 |
 */
 
-$router->get('/', function () use ($router) {
-    return $router->app->version();
-});
+// $router->get('/', function () use ($router) {
+//     return $router->app->version();
+// });
 
 $router->get('/', 'RedirectController@showForm');
 $router->post('/', 'RedirectController@processForm');
